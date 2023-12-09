@@ -1,0 +1,951 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from robostam.netlify.app/index-demo-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jul 2022 12:23:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Multipurpose Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'base_app/img/core-img/favicon.ico' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'base_app/css/style.css' %}">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="{% static 'base_app/css/responsive.css' %}">
+
+</head>
+
+<body class="light-version">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="dream-load"></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area fadeInDown" data-wow-delay="0.2s">
+        <div class="classy-nav-container light breakpoint-off">
+            <div class="container">
+                <!-- Classy Menu -->
+                <nav class="classy-navbar light justify-content-between" id="dreamNav">
+
+                    <!-- Logo -->
+                    <a class="nav-brand light" href="#"><img src="{% static 'base_app/img/core-img/logo.png' %}" alt="logo"> Robostam </a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler demo">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- close btn -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'about-us' %}">About Us</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'faq' %}">FAQ</a></li>
+                                <li><a href="{% url 'blogs' %}">Blog</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+
+                            <!-- Button -->
+                            <!--<a href="#" class="btn login-btn ml-50">Log in</a>-->
+                        </div>
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!--
+    <section class="hero-section ico-bg3 relative hidden" id="home">
+        <div class="ico-circled"></div>
+        <div class="hero-section-content">
+            
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 col-md-12">
+                        <div class="welcome-content text-left">
+                            <div class="promo-section">
+                                <h3 class="special-head gradient-text cyan mt-s">Data Analysis helps your Business grow faster</h3>
+                            </div>
+                            <div class="cd-intro v2 text-left">
+                                <h1 class="cd-headline clip is-full-width thin" >
+                                    <span class="w-text bold">Artificial Intelligence helps you</span>
+                                    <span class="cd-words-wrapper">
+                                        <b class="gradient-text cyan bolder is-hidden">Grow Faster<span class="o-text">.</span></b>
+                                        <b class="gradient-text cyan bolder is-hidden">Manage like A Pro<span class="o-text">.</span></b>
+                                        <b class="gradient-text cyan bolder is-visible">Scale to Success<span class="o-text ">.</span></b>
+                                    </span>
+                                </h1>
+                            </div>
+                            <p class="g-text fadeInUp" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quaerat est, a labore excepturi rem sed eius facere error! Dolore in perspiciatis porro dolor debitis</p>
+                            <div class="dream-btn-group fadeInUp w-text" data-wow-delay="0.4s">
+                                <a href="#" class="btn more-btn pink mr-3">Learn More</a>
+                                <div class="video-demo-prev">
+                                    <a href="#" class="btn more-btn video-btn v2  mr-3"><i class="fa fa-play"></i> </a>
+                                    <span>Watch Demo</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <img src="{% static 'base_app/img/core-img/about.png' %}" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+    <section class="hero-section ico-bg2 relative hidden" id="home">
+            <div class="ico-circled"></div>
+            <!-- Hero Content -->
+            <div class="hero-section-content">
+                
+                <div class="container ">
+                    <div class="row align-items-center">
+                        <!-- Welcome Content -->
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="welcome-content text-left">
+                                <div class="promo-section">
+                                    <h3 class="special-head gradient-text cyan mt-s">Creative Artificial Intelligence Solutions</h3>
+                                </div>
+                                <div class="cd-intro v2 text-left">
+                                    <h1 class="cd-headline clip is-full-width thin" >
+                                        <span class="w-text bold">AI Data Analysis helps grow faster & </span>
+                                        <span class="cd-words-wrapper">
+                                            <b class="gradient-text cyan bolder is-hidden">Manage like A Pro<span class="o-text">.</span></b>
+                                            <b class="gradient-text cyan bolder is-visible">Scale to Success<span class="o-text ">.</span></b>
+                                        </span>
+                                    </h1>
+                                </div>
+                                <p class="g-text fadeInUp" data-wow-delay="0.3s">Robostam fuses AI and data science, reinventing the web solutions landscape. As pioneers, we transform complex challenges into scalable digital breakthroughs. </p>
+                                <div class="dream-btn-group fadeInUp w-text" data-wow-delay="0.4s">
+                                    <a href="#" class="btn more-btn pink mr-3">Learn More</a>
+                                    <div class="video-demo-prev">
+                                        <a href="#" class="btn more-btn video-btn v2  mr-3"><i class="fa fa-play"></i> </a>
+                                        <span>Watch Demo</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mt-50 col-12 col-lg-6 offset-lg-0 col-md-10 offset-md-1 col-sm-12 ">
+                            <div class="fadeInUp" style="" data-wow-delay="0.5s">
+                                <img src="{% static 'base_app/img/core-img/animated-img1.gif' %}" alt="" class="spec-ml city-img img-responsive center-block">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+    <div class="clearfix"></div>
+
+    <!-- ##### About Us Area Start ##### -->
+    <section class="section-padding-100-70 clearfix relative cir-left">
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left">
+                    <img class="img-responsive" src="{% static 'base_app/img/core-img/about3.png' %}" alt="">
+                </div>
+                
+                <div class="col-12 col-lg-6 offset-lg-0">
+                    <div class="who-we-contant mt-s">
+                        <div class="dream-dots text-left fadeInUp" data-wow-delay="0.2s">
+                            <span class="gradient-text blue">New problems need Creative and unusual Solutions</span>
+                        </div>
+                        <h4 class="fadeInUp" data-wow-delay="0.3s">Apply AI, Deep Learning and Data Sciece to solve Business Problems</h4>
+                        <p class="fadeInUp" data-wow-delay="0.4s">In today's dynamic business environment, traditional methods often fall short. At Robostam, we harness the unparalleled power of AI, Deep Learning, and Data Science to tailor bespoke solutions, ensuring your business stays ahead in a competitive marketplace.</p>
+                        <div class="services-block-four v2 mt-30">
+                            <div class="inner-box">
+                                <div class="icon-font-box">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <h3><a href="#">Powerfull Mobile And Online App</a></h3>
+                                <div class="text width-80">Dive into the digital realm with Robostam's state-of-the-art mobile and online applications. Designed for intuitiveness and efficiency, our apps empower users to manage and analyze data on-the-go, ensuring business continuity and agility.</div>
+                            </div>
+                        </div>
+                        <div class="services-block-four v2">
+                            <div class="inner-box">
+                                <div class="icon-font-box">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <h3><a href="#">Special For Multiple Use Capabilities</a></h3>
+                                <div class="text width-80">Versatility is our hallmark. Robostam solutions cater to a myriad of business needs. From data analytics to customer engagement, our platforms seamlessly adapt, ensuring optimal performance across various functions and industries.</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Us Area End ##### -->
+
+    <section class="special section-padding-0-0 clearfix" id="about">
+        
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-12 col-lg-6 offset-lg-0">
+                    <div class="who-we-contant">
+                        <div class="dream-dots text-left fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <span class="gradient-text blue">We are the experts you exactly need</span>
+                        </div>
+                        <h4 class="fadeInUp" data-wow-delay="0.3s">We are a Machine Learning Consulting Firm Experienced in AI</h4>
+                        <p class="fadeInUp" data-wow-delay="0.4s">Navigating the vast seas of data and technology, Robostam stands as a beacon of expertise. With a seasoned team passionate about AI, we dive deep into your business challenges. Using machine learning, we craft data-driven solutions that not only resolve current issues but also pave the way for future growth. Our commitment goes beyond consultation; we partner with our clients, ensuring they harness the full potential of AI, optimizing operations and redefining industry standards. Choose Robostam, where innovation meets practicality.</p>
+                        <div class="list-wrap align-items-center mb-20">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="side-feature-list-item">
+                                        <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                        <div class="foot-c-info">Managed & Secure Backups</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="side-feature-list-item">
+                                        <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                        <div class="foot-c-info">Ready Servers</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="side-feature-list-item">
+                                        <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                        <div class="foot-c-info">Advanced Caching</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="side-feature-list-item">
+                                        <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                        <div class="foot-c-info">24/7 Expert Support</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="side-feature-list-item">
+                                        <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                        <div class="foot-c-info">Unlimited Applications</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="side-feature-list-item">
+                                        <i class="fa fa-check-square-o check-mark-icon-font" aria-hidden="true"></i>
+                                        <div class="foot-c-info">Optimized Stack</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-0 col-md-12 no-padding-left mt-s">
+                    <div class="welcome-meter">
+                        <div class="gt-transparency-anim relative">
+                           <img class="gt-transparency-anim-bg" src="{% static 'base_app/img/core-img/ill2/main-bg.png' %}" alt="">
+                           <img class="gt-transparency-anim-rain-1 rain" src="{% static 'base_app/img/core-img/ill2/rain-1.png' %}" alt="">
+                           <img class="gt-transparency-anim-rain-2 rain ad-2-5" src="{% static 'base_app/img/core-img/ill2/rain-2.png' %}" alt="">
+                           <img class="gt-transparency-anim-cloud-1 cloudmove-1" src="{% static 'base_app/img/core-img/ill2/cloud-1.png' %}" alt="">
+                           <img class="gt-transparency-anim-cloud-2 cloudmove-2" src="{% static 'base_app/img/core-img/ill2/cloud-2.png' %}" alt="">
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-area ico-about-bg section-padding-100-70 clearfix">
+        
+        
+        <div class="bub-right" id="feat">
+            <div class="container">
+                
+                <div class="section-heading text-center">
+                    <!-- Dream Dots -->
+                    <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                        <span class="gradient-text blue">OUR POWERFUL FEATURES</span>
+                    </div>
+                    <h2 class="fadeInUp" data-wow-delay="0.3s"> Why Choose Us</h2>
+                    <p class="fadeInUp" data-wow-delay="0.4s">In a world dominated by data and technology, Robostam stands apart as a beacon of excellence. Our unique blend of AI expertise and deep understanding of business processes positions us at the forefront of digital transformation.</p>
+                </div>
+                    
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Content -->
+                        <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.2s">
+                            <!-- Icon -->
+                            <div class="service_icon">
+                                <img src="{% static 'base_app/img/icons/w1.png' %}" alt="">
+                            </div>
+                            <h6>Go Live in Minutes</h6>
+                            <p>Our solutions are not just effective but also time-efficient. With Robostam, you can expect rapid deployment, ensuring your business experiences minimal downtime and starts benefiting from our solutions in record time.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Content -->
+                        <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.3s">
+                            <!-- Icon -->
+                            <div class="service_icon">
+                                <img src="{% static 'base_app/img/icons/w2.png' %}" alt="">
+                            </div>
+                            <h6>Manage like A Pro</h6>
+                            <p>Equip yourself with the right tools and expertise. With our user-friendly platforms and comprehensive training, even the most complex tasks become manageable, allowing you to oversee operations like a seasoned pro.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Content -->
+                        <div class="service_single_content text-left mb-100 fadeInUp" data-wow-delay="0.4s">
+                            <!-- Icon -->
+                            <div class="service_icon">
+                                <img src="{% static 'base_app/img/icons/w3.png' %}" alt="">
+                            </div>
+                            <h6>Scale to Success</h6>
+                            <p>Growth is inevitable with the right partner. Our scalable solutions adapt as your business grows, ensuring that you're always equipped to handle increased demands and explore new horizons. With Robostam, the sky's the limit.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" section-padding-70-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 offset-lg-0 col-xs-12">
+                        <!--Services Block Four-->
+                        <div class="services-block-four transparent">
+                            <div class="inner-box">
+                                <div class="icon-icon bg1">
+                                    <img src="{% static 'base_app/img/icons/i1.png' %}" alt="">
+                                </div>
+                                <h3><a class="normal" href="#">Register / Login to our Platform</a></h3>
+                                <p class="text">Begin your journey with Robostam. A world of AI-driven solutions awaits you. Sign up or log in to access our platform's full suite of tools and services designed to transform your business.</p>
+                            </div>
+                        </div>
+                        <!--Services Block Four-->
+                        <div class="services-block-four transparent ">
+                            <div class="inner-box">
+                                <div class="icon-icon bg2">
+                                    <img src="{% static 'base_app/img/icons/i2.png' %}" alt="">
+                                </div>
+                                <h3><a class="normal" href="#">Enter your information details </a></h3>
+                                <p class="text">Safety and ease of access are our top priorities. Provide your essential details, and we'll ensure a personalized experience tailored to your business needs. Every data point you share is encrypted and protected with the utmost care.</p>
+                            </div>
+                        </div>
+                        <!--Services Block Four-->
+                        <div class="services-block-four transparent">
+                            <div class="inner-box">
+                                <div class="icon-icon bg3">
+                                    <img src="{% static 'base_app/img/icons/i3.png' %}" alt="">
+                                </div>
+                                <h3><a class="normal" href="#">Explore Our AI-Powered Tools</a></h3>
+                                <p class="text">Dive deep into the world of Robostam. Our platform is equipped with state-of-the-art AI tools that streamline business processes, offering insights like never before. Empower your business with the precision and efficiency of machine learning.</p>
+                                
+                            </div>
+                        </div>
+                        <!--Services Block Four-->
+                        <div class="services-block-four transparent ">
+                            <div class="inner-box">
+                                <div class="icon-icon bg4">
+                                    <img src="{% static 'base_app/img/icons/i4.png' %}" alt="">
+                                </div>
+                                <h3><a class="normal" href="#">Join Our Webinars and Training Sessions</a></h3>
+                                <p class="text">Knowledge is power, and at Robostam, we believe in empowering our users. Enroll in our expert-led webinars and training sessions. From the basics of AI to advanced data analytics, we cover it all, ensuring you harness the full potential of our platform.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6 mt-s">
+                        <div class="service-img-wrapper mb-30">
+                            <div class="image-box">
+                                <img src="{% static 'base_app/img/core-img/appo.png' %}" class="center-block img-responsive phone-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="what-we-do section-padding-100-70">
+      <div class="container">
+         <div class="section-heading text-center">
+            <!-- Dream Dots -->
+            <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <span class="gradient-text blue">OUR EXPECTED GROWTH</span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">Our Global Growth</h2>
+            <p class="wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">From humble beginnings, Robostam is planning to expand globally, leveraging AI and data science to transform businesses across continents. Our commitment to innovation remains unparalleled.</p>
+        </div>
+        <div class="clearfix"></div>
+
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-3">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-6 col-xs-12">
+                            <div class="article hover box-shadow">
+                                <h3 class="article__title">Vision for Global Expansion</h3> 
+                                <p>Robostam is poised for international growth, aiming to bring our AI expertise to businesses globally.</p>               
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-6 col-xs-12">
+                            <div class="article hover box-shadow">
+                                <h3 class="article__title">Forging Future Partnerships</h3> 
+                                <p>We're strategically seeking global alliances, setting the stage for a wider global footprint.</p>               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+
+                    <div class="map-container">
+                        <img src="{% static 'base_app/img/core-img/map.png' %}" class="mb-30" alt="saas" >
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 ">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-6 col-xs-12">
+                            <div class="article hover box-shadow">
+                                <h3 class="article__title">Setting Global Milestones</h3> 
+                                <p>Our ambition drives us forward, with plans to engage with industries worldwide.</p>               
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-6 col-xs-12">
+                            <div class="article hover box-shadow">
+                                <h3 class="article__title">Embracing Global Innovations</h3> 
+                                <p>As we venture globally, we're keen to integrate diverse tech insights, enriching our solutions.</p>               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              
+            </div>
+       
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="apis-sec relative hidden" style="background:#2C225A" id="system">
+        <section class="compare section-padding-100-70">
+            <div class="container">
+                <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                    <span class="gradient-text blue">Why Choose US</span>
+                </div>
+                <h2 class="w-text fadeInUp" data-wow-delay="0.3s">Problems We Defeated</h2>
+                <p class="g-text fadeInUp" data-wow-delay="0.4s">In the realm of AI and data solutions, challenges are abundant. At Robostam, we've not only faced these hurdles but have turned them into milestones of our success journey.</p>
+            </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="compare-box">
+
+                            <div class="compare-heading">
+                                <span class="title text-center">Other AI platforms</span>
+                            </div>
+                            <div class="img-wrap text-center">
+                                <img src="{% static 'base_app/img/core-img/without.png' %}" class="center-block mb-30" alt="">
+                            </div>
+                            <ul class="unfeat-list list-unstyled">
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/unfeat02.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">High costs</span>
+                                        <p>Many AI solutions come with a hefty price tag, making it inaccessible for startups and SMEs.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/unfeat01.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">High commissions</span>
+                                        <p>The cost of success shouldn't be high commissions that eat into your profits.</p>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/unfeat03.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">Tough entry</span>
+                                        <p>Complexity and technical barriers often deter businesses from integrating AI into their processes.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/unfeat04.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">Unstable operation</span>
+                                        <p>Inconsistent solutions can disrupt operations and lead to losses.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="compare-box compare-box-right">
+                            <div class="compare-heading text-center">
+                                <span class="title">Our AI platform</span>
+                            </div>
+                            <div class="img-wrap text-center">
+                                <img src="{% static 'base_app/img/core-img/with.png' %}" class="center-block mb-30" alt="">
+                            </div>
+                            <ul class="unfeat-list list-unstyled">
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/feat01.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">Lower costs</span>
+                                        <p>Robostam offers competitive pricing, ensuring every business, big or small, can benefit from AI.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/feat02.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">Ideal Performance </span>
+                                        <p>With a focus on excellence, our solutions guarantee peak performance every time.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/unfeat05.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">Time Saving</span>
+                                        <p>Efficiency is key. Our AI solutions streamline operations, saving valuable time.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <img src="{% static 'base_app/img/compare/feat09.png' %}" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="desc">
+                                        <span class="title">Statistics &amp; analytics</span>
+                                        <p>Informed decisions are the best ones. Our platform provides comprehensive analytics, giving you a clear picture of your operations.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <div class="clearfix"></div>
+
+        <div class="container section-padding-0-70">
+            <div class="section-heading text-center">
+                <!-- Dream Dots -->
+                <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                    <span class="gradient-text">Discover available APIs</span>
+                </div>
+                <h2 class="w-text fadeInUp" data-wow-delay="0.3s">Get Our Platform APIs</h2>
+                <p class="g-text fadeInUp" data-wow-delay="0.4s">Harness the power of Robostam's platform by accessing our extensive suite of APIs. Designed for versatility and efficiency, our APIs ensure your business remains agile and responsive in a rapidly evolving digital landscape.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="api-box has-shadow">
+                        <img src="{% static 'base_app/img/svg/api1.svg" alt="" class="mb-30">
+                        <h3 class="bold mb-15">Powerful Business APIs</h3>
+                        <p>Robostam's Business APIs are designed to integrate seamlessly, offering dynamic capabilities and fostering automation. Built with precision, they empower businesses to expand functionalities and achieve optimal results, ensuring a competitive edge in today's digital era.</p>
+                        <a href="#" class="btn more-btn pink mt-15">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="api-box v2 has-shadow">
+                        <img src="{% static 'base_app/img/svg/api2.svg" alt="" class="mb-30">
+                        <h3 class="bold mb-15">Platform Documentation</h3>
+                        <p>Our platform documentation is a comprehensive guide, meticulously curated to assist users at every step. It offers clear instructions, best practices, and insights, ensuring a smooth experience while navigating and implementing Robostam's solutions.</p>
+                        <a href="#" class="btn more-btn pink mt-15">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area bg-img">
+
+        <!-- ##### team Area Start ##### -->
+        <div class="striples-bg">
+            <div class="faq-timeline-area transparent section-padding-0-85" id="faq">
+                <div class="container">
+                    <div class="section-heading text-center">
+                        <!-- Dream Dots -->
+                        <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                            <span>Token FAQ</span>
+                        </div>
+                        <h2 class="fadeInUp" data-wow-delay="0.3s">  Frequently Questions</h2>
+                        <p class="fadeInUp" data-wow-delay="0.4s">Navigating the complexities of AI and data science can be daunting. At Robostam, we value transparency and clarity. In this section, we've addressed the most common queries from our community, ensuring you have all the information you need as you embark on this transformative journey with us.</p>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6">
+                            <img class="img-responsive" src="{% static 'base_app/img/core-img/0faq.png' %}" alt="">
+                        </div>
+                        <div class="col-12 col-lg-6 col-md-12">
+                            <div class="dream-faq-area mt-s ">
+                                <dl style="margin-bottom:0">
+                                    <!-- Single FAQ Area -->
+                                    <dt class="wave fadeInUp" data-wow-delay="0.2s">What are the objectives of this business?</dt>
+                                    <dd class="fadeInUp" data-wow-delay="0.3s">
+                                        <p>Robostam's primary objectives are to drive digital transformation through AI and data science, assist businesses in optimizing their operations, and provide innovative solutions that foster growth and efficiency in an ever-evolving marketplace.</p>
+                                    </dd>
+                                    <!-- Single FAQ Area -->
+                                    <dt class="wave fadeInUp" data-wow-delay="0.3s">What is the best features and services we deiver?</dt>
+                                    <dd>
+                                        <p>Robostam takes pride in delivering state-of-the-art AI solutions, robust data analytics, and user-friendly platform integrations. Among our standout features are our powerful business APIs, comprehensive platform documentation, and hands-on customer support, ensuring our clients have the tools and guidance they need at every step.
+                                        We are able to equip your business with state of art AI. either its related to NLP, Computer vision, chatbots, ecommerce etc.</p>
+                                    </dd>
+                                    <!-- Single FAQ Area -->
+                                    <dt class="wave fadeInUp" data-wow-delay="0.4s">Why this AI important to me?</dt>
+                                    <dd>
+                                        <p>In today's digital age, AI plays a pivotal role in automating processes, providing insightful data analysis, and enabling businesses to stay competitive. By harnessing the power of Robostam's AI, you can streamline operations, make informed decisions based on data-driven insights, and unlock new avenues for growth and innovation.</p>
+                                    </dd>
+                                    <!-- Single FAQ Area -->
+                                    <dt class="wave fadeInUp" data-wow-delay="0.5s">how may I take part in and purchase this?</dt>
+                                    <dd>
+                                        <p>Engaging with Robostam is straightforward. Simply visit our website and navigate to the 'Contact Us' or 'Purchase' section. Our dedicated team will guide you through the process, ensuring you select the services that best align with your business needs. Additionally, you can always reach out to our support team for any queries or assistance.</p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ##### Team Area Start ##### -->
+            <section class="our_team_area section-padding-0-70 clearfix" id="team">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-heading text-center">
+                                <!-- Dream Dots -->
+                                <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                                    <span>Our Creative Team</span>
+                                </div>
+                                <h2 class="fadeInUp" data-wow-delay="0.3s">Our Awesome Team</h2>
+                                <p class="fadeInUp" data-wow-delay="0.4s">Robostam thrives on a team committed to innovation in AI and data science. Meet the dynamic minds propelling our vision and success.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Single Team Member -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                           <div class="our-team ico-team">
+                                <div class="team_img">
+                                    <img src="{% static 'base_app/img/team-img/member1.png' %}" class="mt-30 width-80" alt="chef-1">
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="title">Randy crishen</h4>
+                                    <span class="post">Company CEO</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Team Member -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                           <div class="our-team ico-team">
+                                <div class="team_img">
+                                    <img src="{% static 'base_app/img/team-img/member2.png' %}" class="mt-30 width-80" alt="chef-1">
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="title">Monica Ashker</h4>
+                                    <span class="post">Web Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Team Member -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                           <div class="our-team ico-team">
+                                <div class="team_img">
+                                    <img src="{% static 'base_app/img/team-img/member3.png' %}" class="mt-30 width-80" alt="chef-1">
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="title">Tollay Ramzomi</h4>
+                                    <span class="post">Web Developer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Team Member -->
+                        <div class="col-12 col-sm-6 col-lg-3">
+                           <div class="our-team ico-team">
+                                <div class="team_img">
+                                    <img src="{% static 'base_app/img/team-img/member4.png' %}" class="mt-30 width-80" alt="chef-1">
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="title">Jacke Wilson</h4>
+                                    <span class="post">Marketing Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- ##### Team Area End ##### -->
+            <!--
+            <section class="our-partners clearfix section-padding-0-70">
+                <div class="container">
+                    <div class="section-heading text-center">
+                        
+                        <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                            <span>Our Main Partners</span>
+                        </div>
+                        <h2 class="fadeInUp" data-wow-delay="0.3s">Our powerful Partners</h2>
+                        <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo. </p>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/1.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/2.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/3.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/4.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/5.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6   col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/1.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/4.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member ">
+                                <div class="team-img">
+                                    <img class="img-responsive center-block" src="{% static 'base_app/img/partners/5.png' %}" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section> -->
+        </div>
+        <!-- ##### team Area End ##### -->
+
+        <div class="footer-content-area mt-0">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="footer-copywrite-info">
+                            <!-- Copywrite -->
+                            <div class="copywrite_text fadeInUp" data-wow-delay="0.2s">
+                                <div class="footer-logo">
+                                    <a href="#"><img src="{% static 'base_app/img/core-img/logo.png' %}" alt="logo"> Robostam </a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit ducimus voluptatibus neque illo id repellat quisquam? Autem expedita earum quae laborum ipsum ad.</p>
+                            </div>
+                            <!-- Social Icon -->
+                            <div class="footer-social-info fadeInUp" data-wow-delay="0.4s">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-6">
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <!-- Content Info -->
+                            <div class="contact_info mt-x text-center fadeInUp" data-wow-delay="0.3s">
+                                <h5>PRIVACY & TOS</h5>
+                                <a href="#"><p>Advertiser Agreement</p></a>
+                                <a href="#"><p>Acceptable Use Policy</p></a>
+                                <a href="#"><p>Privacy Policy</p></a>
+                                <a href="#"><p>Technology Privacy</p></a>
+                                <a href="#"><p>Developer Agreement</p></a>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="col-12 col-lg-2 col-md-6 ">
+                        <!-- Content Info -->
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.2s">
+                                <h5>NAVIGATE</h5>
+                                <a href="#"><p>Advertisers</p></a>
+                                <a href="#"><p>Developers</p></a>
+                                <a href="#"><p>Resources</p></a>
+                                <a href="#"><p>Company</p></a>
+                                <a href="#"><p>Connect</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-12 col-lg-3 col-md-6 ">
+                        <div class="contact_info_area d-sm-flex justify-content-between">
+                            <!-- Content Info -->
+                            <div class="contact_info mt-s text-center fadeInUp" data-wow-delay="0.4s">
+                                <h5>CONTACT US</h5>
+                                <p>Mailing Address:xx00 E. Union Ave</p>
+                                <p>Suite 1100. Denver, CO 80237</p>
+                                <p>+999 90932 627</p>
+                                <p>support@yourdomain.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ########## All JS ########## -->
+    <!-- jQuery js -->
+    <script src="{% static 'base_app/js/jquery.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'base_app/js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'base_app/js/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'base_app/js/plugins.js' %}"></script>
+    <script src="{% static 'base_app/js/animated.js' %}"></script>
+    <!-- Parallax js -->
+    <script src="{% static 'base_app/js/dzsparallaxer.js' %}"></script>
+
+    <script src="{% static 'base_app/js/jquery.syotimer.min.js' %}"></script>
+
+    <!-- script js -->
+    <script src="{% static 'base_app/js/script.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from robostam.netlify.app/index-demo-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jul 2022 12:24:06 GMT -->
+</html>
